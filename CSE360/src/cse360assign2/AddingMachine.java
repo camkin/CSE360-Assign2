@@ -4,9 +4,15 @@ public class AddingMachine {
 
 	private int total;
 	
+	//Used for history of transactions
+	private String history;
+	
 
+	
+	//hello
 	public AddingMachine () {
 		total = 0;  // not needed - included for clarity
+		
 	}
 	
 	public int getTotal () {
@@ -28,7 +34,7 @@ public class AddingMachine {
 	}
 		
 	public String toString () {
-		return "";
+		return history;
 	}
 
 	public void clear() {
