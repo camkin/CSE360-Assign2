@@ -4,6 +4,7 @@ public class AddingMachine {
 
 	private int total;
 	
+	//this is a test
 	public AddingMachine () {
 		total = 0;  // not needed - included for clarity
 	}
