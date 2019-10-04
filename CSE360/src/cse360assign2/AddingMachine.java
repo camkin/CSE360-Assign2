@@ -4,21 +4,27 @@ public class AddingMachine {
 
 	private int total;
 	
-	//this is a test
+
 	public AddingMachine () {
 		total = 0;  // not needed - included for clarity
 	}
 	
 	public int getTotal () {
-		return 0;
+		System.out.print("test test test");
+		//iii. Return current total
+		return total;
 	}
 	
 	public void add (int value) {
 		
+		//i. Add method should add the parameter to the total variable
+		total = total + value;
 	}
 	
 	public void subtract (int value) {
 		
+		//ii. Subtract the parameter from the total variable
+		total = total - value;
 	}
 		
 	public String toString () {
