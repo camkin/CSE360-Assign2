@@ -5,16 +5,15 @@ public class AddingMachine {
 	private int total;
 	
 	//Used for history of transactions
-	private String history;
+	private StringBuilder history;
 
 	public AddingMachine () {
 		total = 0;  // not needed - included for clarity
-		history = new String("0");
+		history = new StringBuilder("0");
 		
 	}
 	
 	public int getTotal () {
-		System.out.print("test test test");
 		//iii. Return current total
 		return total;
 	}
@@ -23,6 +22,7 @@ public class AddingMachine {
 		
 		//i. Add method should add the parameter to the total variable
 		total = total + value;
+		history.append(" + "+value);
 		
 	}
 	
@@ -30,6 +30,7 @@ public class AddingMachine {
 		
 		//ii. Subtract the parameter from the total variable
 		total = total - value;
+		history.append(" - "+value);
 	}
 		
 	public String toString () {
