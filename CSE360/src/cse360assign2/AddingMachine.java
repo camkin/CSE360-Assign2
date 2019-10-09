@@ -6,12 +6,10 @@ public class AddingMachine {
 	
 	//Used for history of transactions
 	private String history;
-	
 
-	
-	//hello
 	public AddingMachine () {
 		total = 0;  // not needed - included for clarity
+		history = new String("0");
 		
 	}
 	
@@ -25,6 +23,7 @@ public class AddingMachine {
 		
 		//i. Add method should add the parameter to the total variable
 		total = total + value;
+		
 	}
 	
 	public void subtract (int value) {
@@ -34,7 +33,7 @@ public class AddingMachine {
 	}
 		
 	public String toString () {
-		return history;
+		return history.toString();
 	}
 
 	public void clear() {
