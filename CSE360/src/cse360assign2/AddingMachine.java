@@ -5,7 +5,6 @@
 package cse360assign2;
 
 public class AddingMachine {
-
 	
 	private int total;
 	
@@ -26,6 +25,8 @@ public class AddingMachine {
 	public void add (int value) {		
 		//i. Add method should add the parameter to the total variable
 		total = total + value;
+		
+		//This will show the '+' operator and specified # 
 		history.append(" + "+value);
 		
 	}
@@ -33,6 +34,8 @@ public class AddingMachine {
 	public void subtract (int value) {		
 		//ii. Subtract the parameter from the total variable
 		total = total - value;
+		
+		//This will show the '-' operator and specified # 
 		history.append(" - "+value);
 	}
 		
@@ -44,4 +47,5 @@ public class AddingMachine {
 	public void clear() {
 	
 	}
+	
 }
